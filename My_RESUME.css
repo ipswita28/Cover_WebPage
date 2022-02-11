@@ -1,0 +1,238 @@
+/* CSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+/* Navigation Bar:Logo and Image */
+#logo{
+margin: 20px 10px;
+}
+#logo img{
+    height: 200px;
+    margin: 20px 10px;
+    border-radius:53px;
+}
+/* Navigation Bar:List Styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Delius Unicase', cursive;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 2rem;
+}
+#navbar ul li a{
+    color: blanchedalmond;
+    display: block;
+    padding: 9px 81px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(128, 110, 83);
+    background-color: cornsilk;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 200px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('./photo-1544731612-de7f96afe55f.jpg') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    color: cornsilk;
+    text-align: center;
+    font-family: 'Delius Unicase', cursive;
+}
+#home p{
+    color: rgb(236, 226, 186);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Delius Unicase', cursive;
+}
+/* Work Section */
+#works{
+    margin: 34px;
+    display: flex;
+}
+#works .box{
+    border: 2px solid beige;
+    padding: 2px;
+    margin: 9px 4px;
+    border-radius: 10px;
+    background-color: bisque;
+}
+#works .box:hover{
+    transform: scale(1.1);
+}
+#works .box img{
+    height: 200px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+}
+#works .box p{
+    font-family: 'Delius Unicase', cursive;
+    margin-bottom: 20px;
+}
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+        background: url('./Contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-family: 'Delius Unicase', cursive;
+    font-size: 1.3rem;
+}
+footer{
+    background: black;
+    color: aliceblue;
+    padding: 9px 20px;
+}
+/* utility class */
+.primary{
+    font-size: 3.2rem;
+    padding: 12px;
+    font-family: 'Delius Unicase', cursive;
+}
+.description{
+    font-size: 2.2rem;
+    padding: 12px;
+    font-family: 'Delius Unicase', cursive;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(133, 71, 27);
+    background-color: chocolate;
+    color: rgb(243, 231, 222);
+    margin: 17px;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+.primary2{
+    font-size: 3rem;
+}
+#skill-section{
+    position: relative;
+    height: 630px;
+}
+#skill-section p{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10%;
+    width: 0px;
+    font-family: 'Delius Unicase', cursive;
+}
+#skill-section::before{
+    content: "";
+    position: absolute;
+    background: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#container1 {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    width: 50%; /* Full width */
+    background-color: #ddd; /* Grey background */
+    margin-left: 10%;
+    font-family: 'Delius Unicase', cursive;
+    border-radius: 50px;
+  }
+.skills 
+{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    color: white; 
+}
+.html {
+    width: 90%; 
+    background-color: #04AA6D;
+    border-radius: 50px;
+    opacity: 0.7 ;
+}
+.css {
+    width: 80%; 
+    background-color: #2196F3;
+    border-radius: 50px;
+    opacity: 0.7 ;
+}
+.js {
+    width: 65%; 
+    background-color: #f44336;
+    border-radius: 50px;
+    opacity: 0.7 ;
+}
+.php {
+    width: 90%; 
+    background-color: #bbd853;
+    border-radius: 50px;
+    opacity: 0.7 ;
+}
