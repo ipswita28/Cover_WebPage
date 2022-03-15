@@ -8,27 +8,44 @@
     <link rel="stylesheet" href="My_RESUME.css">
     <link rel="stylesheet" media="screen and (max-width:1170px)" href="Phone.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cdf39178c9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav id="navbar">
+    <nav id="navbar" class="cont">
         <div id="logo">
             <img src="JOB_IMAGE.jpeg" alt="JOB2.jpeg">
         </div>
         <ul>
-            <li class="item"><a href="">Home</a></li>
-            <li class="item"><a href="">My Works</a></li>
-            <li class="item"><a href="">Skills</a></li>
-            <li class="item"><a href="">Contact</a></li>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#work">My Works</a></li>
+            <li class="item"><a href="#skill-section">Skills</a></li>
+            <li class="item"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <section id="home">
         <h1 class="primary">Welcome to my Page!</h1>
-        <p>I am Ipswita and I have made this page to show my works ad skills.</p>
+        <p>Hello ! My name is Ipswita and I have made this page to show my works as well as my skills.</p>
         <p>With hard effort, perseverance, and dedication, I aim to thrive in any area.</p>
-        <button class="btn">See Forward</button>
+        <div class="centerdiv">
+            <a href="https://www.facebook.com/ipswita.das.7/" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/ipswita_das/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ipswitadas/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/ipswita28" target="_blank">
+                <i class="fa-brands fa-github-square"></i>
+            </a>
+            <a href="https://www.hackerrank.com/ipswita28" target="_blank">
+                <i class="fa-brands fa-hackerrank"></i>
+            </a>
+        </div>
     </section>
     <section class="works-container">
-        <h1 class="primary center">My Works</h1>
+        <h1 class="primary center" id="work">My Works</h1>
             <div id="works">
                 <div class="box">
                     <img src="./drawing/corner view_photoshopped.png" alt="">
@@ -47,6 +64,7 @@
                 </div>
             </div>
     </section>
+    
     <section id="skill-section">
         <h1 class="primary center">Skills</h1>
         <p>HTML</p>
@@ -66,6 +84,11 @@
         <p>C</p>
         <div id="container1">
         <div class="skills php">90%</div>
+        </div>
+
+        <p>Python</p>
+        <div id="container1">
+        <div class="skills python">40%</div>
         </div>
     </section>
     <section id="contact">
@@ -90,7 +113,9 @@
                 </div>
             </form>
         </div>
+        
     </section>
+    <a class="arrow" href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
     <footer>
         <div class="center">
             Copyright &copy; MyPortfolio. All rights reserved!
