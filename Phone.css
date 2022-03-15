@@ -48,3 +48,17 @@
     font-size: 12px;
     padding: 4px 8px;
 }
+.centerdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centerdiv a{
+    height: 40px;
+    width: 40px;
+    border-radius: 15px;
+    line-height: 40px;
+}
+.centerdiv a i{
+    font-size: 20px;
+}
